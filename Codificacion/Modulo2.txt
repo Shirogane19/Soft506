@@ -1,0 +1,154 @@
+Module Module2
+
+    Sub Main()
+
+        Dim nombreDioses(8) As String
+        nombreDioses(0) = "Zeus"
+        nombreDioses(1) = "Hera"
+        nombreDioses(2) = "Poseidon"
+        nombreDioses(3) = "Dionisio"
+        nombreDioses(4) = "Apolo"
+        nombreDioses(5) = "Artemisa"
+        nombreDioses(6) = "Hermes"
+        nombreDioses(7) = "Atenea"
+        nombreDioses(8) = "Ares"
+
+        Dim generoDioses(8) As Boolean
+        generoDioses(0) = False
+        generoDioses(1) = True
+        generoDioses(2) = False
+        generoDioses(3) = False
+        generoDioses(4) = False
+        generoDioses(5) = True
+        generoDioses(6) = False
+        generoDioses(7) = True
+        generoDioses(8) = False
+
+
+        Dim numeroHijos(8) As Integer
+        numeroHijos(0) = 26
+        numeroHijos(1) = 28
+        numeroHijos(2) = 16
+        numeroHijos(3) = 34
+        numeroHijos(4) = 14
+        numeroHijos(5) = 26
+        numeroHijos(6) = 38
+        numeroHijos(7) = 12
+        numeroHijos(8) = 9
+        obtenerMayorGenero(generoDioses)
+        obtenerMayorDiosaHijos(nombreDioses, generoDioses, numeroHijos)
+        obtenerPromedioHijos(generoDioses, numeroHijos)
+        obtenerDatosDioses(nombreDioses, generoDioses, numeroHijos)
+        obtenerDatosDiosesPorGenero(nombreDioses, generoDioses, numeroHijos)
+        System.Threading.Thread.Sleep(10000)
+
+
+
+    End Sub
+
+    Function obtenerMayorGenero(generoDioses As Boolean()) As Integer
+        Dim contadorHombres As Integer
+        Dim contadorMujeres As Integer
+        Dim mensaje As String
+
+        For i As Integer = 0 To 8
+            If (generoDioses(i) = False) Then
+                contadorHombres = contadorHombres + 1
+            Else
+                contadorMujeres = contadorMujeres + 1
+            End If
+        Next
+
+        If (contadorHombres > contadorMujeres) Then
+            mensaje = "El genero masculino es el mas presentado"
+        Else
+            mensaje = "El genero femenino es el mas presentado"
+        End If
+        System.Console.WriteLine(mensaje)
+    End Function
+
+    Function obtenerMayorDiosaHijos(nombreDioses As String(), generoDioses As Boolean(), numeroHijos As Integer())
+        Dim nombreDiosa As String
+        Dim numeroHijosDiosa As Integer
+
+        For i As Integer = 0 To 8
+            If (generoDioses(i) = True) Then
+                If (numeroHijosDiosa < numeroHijos(i)) Then
+                    nombreDiosa = nombreDioses(i)
+                    numeroHijosDiosa = numeroHijos(i)
+                End If
+            End If
+        Next
+        System.Console.WriteLine(" La Diosa con mayor numero de hijos es " & nombreDiosa & " con un numero de " & numeroHijosDiosa & " hijos.")
+    End Function
+
+    Function obtenerPromedioHijos(generoDioses As Boolean(), numeroHijos As Integer())
+        Dim sumatoria As Integer
+        Dim contador As Integer
+        Dim promedio As Integer
+            For i As Integer = 0 To 8
+            If (generoDioses(i) = False) Then
+                sumatoria = sumatoria + numeroHijos(i)
+                contador = contador + 1
+            End If
+        Next
+            promedio = sumatoria / contador
+            Console.WriteLine("El promedio de hijos es de " & promedio)
+
+    End Function
+
+    Function obtenerDatosDioses(nombreDioses As String(), generoDioses As Boolean(), numeroHijos As Integer())
+        Dim datosDioses(8) As String
+        Dim genero As String
+        For i As Integer = 0 To 8
+
+            If (generoDioses(i) = False) Then
+                genero = "masculino"
+            Else
+                genero = "femenino"
+            End If
+            datosDioses(i) = nombreDioses(i) + " " + genero + " " + numeroHijos(i).ToString()
+            Console.WriteLine(datosDioses(i))
+
+        Next
+        Console.WriteLine("/n")
+    End Function
+
+
+    Function obtenerDatosDiosesPorGenero(nombreDioses As String(), generoDioses As Boolean(), numeroHijos As Integer())
+        Dim datosDiosesHombres(8) As String
+        Dim datosDiosesMujeres(8) As String
+        Dim genero As String
+        Dim contadorHombres As Integer
+        Dim contadorMujeres As Integer
+        For i As Integer = 0 To 8
+
+            If (generoDioses(i) = False) Then
+                genero = "masculino"
+                datosDiosesHombres(contadorHombres) = nombreDioses(i) + " " + genero + " " + numeroHijos(i).ToString()
+                contadorHombres = contadorHombres + 1
+            Else
+                genero = "femenino"
+                datosDiosesMujeres(contadorMujeres) = nombreDioses(i) + " " + genero + " " + numeroHijos(i).ToString()
+                contadorMujeres = contadorMujeres + 1
+            End If
+        Next
+
+        For i As Integer = 0 To contadorHombres - 1
+            If (String.IsNullOrEmpty(datosDiosesHombres(i)) = False) Then
+                Console.WriteLine("/n")
+                Console.WriteLine(datosDiosesHombres(i))
+                Console.Write("*------------------------------------*")
+            End If
+        Next
+
+        For i As Integer = 0 To contadorMujeres - 1
+            If (String.IsNullOrEmpty(datosDiosesMujeres(i)) = False) Then
+                Console.WriteLine("/n")
+                Console.WriteLine(datosDiosesMujeres(i))
+                Console.Write("*------------------------------------*")
+            End If
+        Next
+
+    End Function
+End Module
