@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FrmMenu
+Partial Class FrmPantallaPrincipal
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -23,7 +23,7 @@ Partial Class FrmMenu
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmMenu))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmPantallaPrincipal))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblNombre = New System.Windows.Forms.Label()
         Me.btnUsuarios = New System.Windows.Forms.Button()
@@ -39,12 +39,12 @@ Partial Class FrmMenu
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.btnSalir = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.btnOut = New System.Windows.Forms.Button()
         Me.btnInicio = New System.Windows.Forms.Button()
         Me.btnAyuda = New System.Windows.Forms.Button()
         Me.btnPerfil = New System.Windows.Forms.Button()
+        Me.btnSalir = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
@@ -58,7 +58,7 @@ Partial Class FrmMenu
         Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(22, 38)
+        Me.Label1.Location = New System.Drawing.Point(22, 35)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(210, 42)
         Me.Label1.TabIndex = 1
@@ -243,6 +243,74 @@ Partial Class FrmMenu
         Me.Panel4.Size = New System.Drawing.Size(231, 719)
         Me.Panel4.TabIndex = 34
         '
+        'btnOut
+        '
+        Me.btnOut.BackColor = System.Drawing.Color.Transparent
+        Me.btnOut.FlatAppearance.BorderSize = 0
+        Me.btnOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnOut.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnOut.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnOut.Image = CType(resources.GetObject("btnOut.Image"), System.Drawing.Image)
+        Me.btnOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnOut.Location = New System.Drawing.Point(15, 325)
+        Me.btnOut.Name = "btnOut"
+        Me.btnOut.Size = New System.Drawing.Size(200, 59)
+        Me.btnOut.TabIndex = 34
+        Me.btnOut.Text = "Salir"
+        Me.btnOut.UseVisualStyleBackColor = False
+        '
+        'btnInicio
+        '
+        Me.btnInicio.BackColor = System.Drawing.Color.Transparent
+        Me.btnInicio.FlatAppearance.BorderSize = 0
+        Me.btnInicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnInicio.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnInicio.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnInicio.Image = CType(resources.GetObject("btnInicio.Image"), System.Drawing.Image)
+        Me.btnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnInicio.Location = New System.Drawing.Point(15, 143)
+        Me.btnInicio.Name = "btnInicio"
+        Me.btnInicio.Size = New System.Drawing.Size(200, 59)
+        Me.btnInicio.TabIndex = 33
+        Me.btnInicio.Text = "Inicio"
+        Me.btnInicio.UseVisualStyleBackColor = False
+        '
+        'btnAyuda
+        '
+        Me.btnAyuda.BackColor = System.Drawing.Color.Transparent
+        Me.btnAyuda.FlatAppearance.BorderSize = 0
+        Me.btnAyuda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAyuda.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAyuda.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnAyuda.Image = CType(resources.GetObject("btnAyuda.Image"), System.Drawing.Image)
+        Me.btnAyuda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAyuda.Location = New System.Drawing.Point(15, 261)
+        Me.btnAyuda.Name = "btnAyuda"
+        Me.btnAyuda.Size = New System.Drawing.Size(200, 59)
+        Me.btnAyuda.TabIndex = 32
+        Me.btnAyuda.Text = "Ayuda"
+        Me.btnAyuda.UseVisualStyleBackColor = False
+        '
+        'btnPerfil
+        '
+        Me.btnPerfil.BackColor = System.Drawing.Color.Transparent
+        Me.btnPerfil.FlatAppearance.BorderSize = 0
+        Me.btnPerfil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPerfil.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPerfil.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnPerfil.Image = CType(resources.GetObject("btnPerfil.Image"), System.Drawing.Image)
+        Me.btnPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnPerfil.Location = New System.Drawing.Point(15, 202)
+        Me.btnPerfil.Name = "btnPerfil"
+        Me.btnPerfil.Size = New System.Drawing.Size(200, 59)
+        Me.btnPerfil.TabIndex = 31
+        Me.btnPerfil.Text = "Mi perfil"
+        Me.btnPerfil.UseVisualStyleBackColor = False
+        '
         'btnSalir
         '
         Me.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -267,75 +335,7 @@ Partial Class FrmMenu
         Me.Button2.Text = "Seguridad"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'btnOut
-        '
-        Me.btnOut.BackColor = System.Drawing.Color.Transparent
-        Me.btnOut.FlatAppearance.BorderSize = 0
-        Me.btnOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.btnOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnOut.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnOut.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnOut.Image = CType(resources.GetObject("btnOut.Image"), System.Drawing.Image)
-        Me.btnOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnOut.Location = New System.Drawing.Point(16, 325)
-        Me.btnOut.Name = "btnOut"
-        Me.btnOut.Size = New System.Drawing.Size(200, 59)
-        Me.btnOut.TabIndex = 34
-        Me.btnOut.Text = "Salir"
-        Me.btnOut.UseVisualStyleBackColor = False
-        '
-        'btnInicio
-        '
-        Me.btnInicio.BackColor = System.Drawing.Color.Transparent
-        Me.btnInicio.FlatAppearance.BorderSize = 0
-        Me.btnInicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnInicio.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnInicio.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnInicio.Image = CType(resources.GetObject("btnInicio.Image"), System.Drawing.Image)
-        Me.btnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnInicio.Location = New System.Drawing.Point(16, 143)
-        Me.btnInicio.Name = "btnInicio"
-        Me.btnInicio.Size = New System.Drawing.Size(200, 59)
-        Me.btnInicio.TabIndex = 33
-        Me.btnInicio.Text = "Inicio"
-        Me.btnInicio.UseVisualStyleBackColor = False
-        '
-        'btnAyuda
-        '
-        Me.btnAyuda.BackColor = System.Drawing.Color.Transparent
-        Me.btnAyuda.FlatAppearance.BorderSize = 0
-        Me.btnAyuda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.btnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAyuda.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAyuda.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnAyuda.Image = CType(resources.GetObject("btnAyuda.Image"), System.Drawing.Image)
-        Me.btnAyuda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAyuda.Location = New System.Drawing.Point(16, 261)
-        Me.btnAyuda.Name = "btnAyuda"
-        Me.btnAyuda.Size = New System.Drawing.Size(200, 59)
-        Me.btnAyuda.TabIndex = 32
-        Me.btnAyuda.Text = "Ayuda"
-        Me.btnAyuda.UseVisualStyleBackColor = False
-        '
-        'btnPerfil
-        '
-        Me.btnPerfil.BackColor = System.Drawing.Color.Transparent
-        Me.btnPerfil.FlatAppearance.BorderSize = 0
-        Me.btnPerfil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPerfil.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPerfil.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnPerfil.Image = CType(resources.GetObject("btnPerfil.Image"), System.Drawing.Image)
-        Me.btnPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnPerfil.Location = New System.Drawing.Point(16, 202)
-        Me.btnPerfil.Name = "btnPerfil"
-        Me.btnPerfil.Size = New System.Drawing.Size(200, 59)
-        Me.btnPerfil.TabIndex = 31
-        Me.btnPerfil.Text = "Mi perfil"
-        Me.btnPerfil.UseVisualStyleBackColor = False
-        '
-        'FrmMenu
+        'FrmPantallaPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -348,7 +348,7 @@ Partial Class FrmMenu
         Me.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(96, Byte), Integer))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "FrmMenu"
+        Me.Name = "FrmPantallaPrincipal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu"
         Me.Panel1.ResumeLayout(False)

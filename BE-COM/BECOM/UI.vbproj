@@ -70,43 +70,44 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="FrmRegistrarRol.Designer.vb">
+      <DependentUpon>FrmRegistrarRol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrarRol.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="FrmMostrarRoles.Designer.vb">
+      <DependentUpon>FrmMostrarRoles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMostrarRoles.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAgregarUsuario.Designer.vb">
-      <DependentUpon>FrmAgregarUsuario.vb</DependentUpon>
+    <Compile Include="FrmMantenimientoUsuarios.Designer.vb">
+      <DependentUpon>FrmMantenimientoUsuarios.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmAgregarUsuario.vb">
+    <Compile Include="FrmMantenimientoUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAlumnos.Designer.vb">
-      <DependentUpon>FrmAlumnos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmAlumnos.vb">
+    <Compile Include="FrmPantallaPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmBecas.Designer.vb">
-      <DependentUpon>FrmBecas.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmBecas.vb">
+    <Compile Include="FrmPantallaPrincipal.Designer.vb">
+      <DependentUpon>FrmPantallaPrincipal.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmIniciaSesion.Designer.vb">
-      <DependentUpon>FrmIniciaSesion.vb</DependentUpon>
+    <Compile Include="FrmRegistrarUsuario.Designer.vb">
+      <DependentUpon>FrmRegistrarUsuario.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmIniciaSesion.vb">
+    <Compile Include="FrmRegistrarUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMenuUsuario.Designer.vb">
-      <DependentUpon>FrmMenuUsuario.vb</DependentUpon>
+    <Compile Include="FrmIniciarSesion.Designer.vb">
+      <DependentUpon>FrmIniciarSesion.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmMenuUsuario.vb">
+    <Compile Include="FrmIniciarSesion.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="GlobalModule.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -148,23 +149,23 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="FrmRegistrarRol.resx">
+      <DependentUpon>FrmRegistrarRol.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmAgregarUsuario.resx">
-      <DependentUpon>FrmAgregarUsuario.vb</DependentUpon>
+    <EmbeddedResource Include="FrmMostrarRoles.resx">
+      <DependentUpon>FrmMostrarRoles.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmAlumnos.resx">
-      <DependentUpon>FrmAlumnos.vb</DependentUpon>
+    <EmbeddedResource Include="FrmMantenimientoUsuarios.resx">
+      <DependentUpon>FrmMantenimientoUsuarios.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmBecas.resx">
-      <DependentUpon>FrmBecas.vb</DependentUpon>
+    <EmbeddedResource Include="FrmPantallaPrincipal.resx">
+      <DependentUpon>FrmPantallaPrincipal.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmIniciaSesion.resx">
-      <DependentUpon>FrmIniciaSesion.vb</DependentUpon>
+    <EmbeddedResource Include="FrmRegistrarUsuario.resx">
+      <DependentUpon>FrmRegistrarUsuario.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMenuUsuario.resx">
-      <DependentUpon>FrmMenuUsuario.vb</DependentUpon>
+    <EmbeddedResource Include="FrmIniciarSesion.resx">
+      <DependentUpon>FrmIniciarSesion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -196,6 +197,16 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Visual Studio 2013\Projects\UsuariosProyecto\BLL\BLL.csproj">
+      <Project>{d7cfe424-d6a4-4ef3-9753-1ad7ecfc554e}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Visual Studio 2013\Projects\UsuariosProyecto\EntitiesLayer\EntitiesLayer.csproj">
+      <Project>{4a7a979d-db76-460d-b7c4-4a39d09149ba}</Project>
+      <Name>EntitiesLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

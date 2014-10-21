@@ -1,4 +1,4 @@
-﻿Public Class FrmAgregarUsuario
+﻿Public Class FrmRegistrarUsuario
 
     Private Sub FrmAgregarAlumno_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -11,10 +11,6 @@
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
-        Me.Hide()
-        FrmMenuUsuario.Show()
-    End Sub
 
 
     Private Sub btnAgregar_Click(sender As Object, e As EventArgs)
@@ -29,16 +25,11 @@
         End If
     End Sub
 
-   
+
     Private Sub btnMenu_Click(sender As Object, e As EventArgs)
         PopMenu.Show()
     End Sub
 
-  
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        FrmAlumnos.Show()
-        Me.Hide()
-    End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         PopAgregado.Show()
