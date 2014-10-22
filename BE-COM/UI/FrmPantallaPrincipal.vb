@@ -26,4 +26,10 @@
         frmMantenimientoUsuarios.Show()
         Me.Hide()
     End Sub
+
+    Private Sub btnBecas_Click(sender As Object, e As EventArgs) Handles btnBecas.Click
+        Dim frmMostrarTiposBeca As Form = New FrmMostrarTiposDeBeca(Me)
+        frmMostrarTiposBeca.Show()
+
+    End Sub
 End Class

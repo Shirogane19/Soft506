@@ -33,10 +33,6 @@ Partial Class FrmRegistrarRol
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.btnOut = New System.Windows.Forms.Button()
         Me.btnSalir = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -53,11 +49,15 @@ Partial Class FrmRegistrarRol
         Me.Label12 = New System.Windows.Forms.Label()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.Panel5.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'oflImagen
@@ -206,45 +206,6 @@ Partial Class FrmRegistrarRol
         Me.Button6.Text = "Usuarios"
         Me.Button6.UseVisualStyleBackColor = False
         '
-        'Panel5
-        '
-        Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
-        Me.Panel5.Controls.Add(Me.PictureBox3)
-        Me.Panel5.Controls.Add(Me.Panel6)
-        Me.Panel5.Controls.Add(Me.Label2)
-        Me.Panel5.Location = New System.Drawing.Point(0, 1)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(231, 131)
-        Me.Panel5.TabIndex = 30
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(89, 31)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(53, 50)
-        Me.PictureBox3.TabIndex = 31
-        Me.PictureBox3.TabStop = False
-        '
-        'Panel6
-        '
-        Me.Panel6.Location = New System.Drawing.Point(234, 0)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(916, 69)
-        Me.Panel6.TabIndex = 30
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(49, 91)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(133, 25)
-        Me.Label2.TabIndex = 16
-        Me.Label2.Text = "Mauricio Araica"
-        '
         'btnOut
         '
         Me.btnOut.BackColor = System.Drawing.Color.Transparent
@@ -391,7 +352,7 @@ Partial Class FrmRegistrarRol
         Me.lblPermisos.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPermisos.Location = New System.Drawing.Point(515, 28)
         Me.lblPermisos.Name = "lblPermisos"
-        Me.lblPermisos.Size = New System.Drawing.Size(82, 25)
+        Me.lblPermisos.Size = New System.Drawing.Size(83, 25)
         Me.lblPermisos.TabIndex = 43
         Me.lblPermisos.Text = "Permisos"
         '
@@ -445,6 +406,45 @@ Partial Class FrmRegistrarRol
         Me.Label4.TabIndex = 27
         Me.Label4.Text = "Nombre:"
         '
+        'Panel6
+        '
+        Me.Panel6.Location = New System.Drawing.Point(234, 0)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(916, 69)
+        Me.Panel6.TabIndex = 30
+        '
+        'Panel5
+        '
+        Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
+        Me.Panel5.Controls.Add(Me.PictureBox3)
+        Me.Panel5.Controls.Add(Me.Panel6)
+        Me.Panel5.Controls.Add(Me.Label2)
+        Me.Panel5.Location = New System.Drawing.Point(0, 1)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(231, 131)
+        Me.Panel5.TabIndex = 30
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(49, 91)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(133, 25)
+        Me.Label2.TabIndex = 16
+        Me.Label2.Text = "Mauricio Araica"
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(89, 31)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(53, 50)
+        Me.PictureBox3.TabIndex = 31
+        Me.PictureBox3.TabStop = False
+        '
         'FrmRegistrarRol
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -460,11 +460,11 @@ Partial Class FrmRegistrarRol
         Me.Text = "FrmAgregarAlumno"
         Me.Panel3.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -478,10 +478,6 @@ Partial Class FrmRegistrarRol
     Friend WithEvents Button7 As System.Windows.Forms.Button
     Friend WithEvents Button9 As System.Windows.Forms.Button
     Friend WithEvents Button6 As System.Windows.Forms.Button
-    Friend WithEvents Panel5 As System.Windows.Forms.Panel
-    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
-    Friend WithEvents Panel6 As System.Windows.Forms.Panel
-    Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents btnOut As System.Windows.Forms.Button
     Friend WithEvents btnSalir As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
@@ -498,4 +494,8 @@ Partial Class FrmRegistrarRol
     Friend WithEvents btnRegistrar As System.Windows.Forms.Button
     Friend WithEvents lblNombreV As System.Windows.Forms.Label
     Friend WithEvents lblDescripcionV As System.Windows.Forms.Label
+    Friend WithEvents Panel5 As System.Windows.Forms.Panel
+    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents Panel6 As System.Windows.Forms.Panel
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 End Class
