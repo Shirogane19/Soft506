@@ -25,7 +25,7 @@ Partial Class FrmRegistrarRol
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmRegistrarRol))
         Me.oflImagen = New System.Windows.Forms.OpenFileDialog()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnVolver = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Button10 = New System.Windows.Forms.Button()
@@ -43,8 +43,7 @@ Partial Class FrmRegistrarRol
         Me.btnInicio = New System.Windows.Forms.Button()
         Me.btnAyuda = New System.Windows.Forms.Button()
         Me.btnPerfil = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.lblDescripcionV = New System.Windows.Forms.Label()
+        Me.pnFormulario = New System.Windows.Forms.Panel()
         Me.lblNombreV = New System.Windows.Forms.Label()
         Me.btnRegistrar = New System.Windows.Forms.Button()
         Me.lblPermisos = New System.Windows.Forms.Label()
@@ -53,11 +52,12 @@ Partial Class FrmRegistrarRol
         Me.Label12 = New System.Windows.Forms.Label()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblDescripcionV = New System.Windows.Forms.Label()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
+        Me.pnFormulario.SuspendLayout()
         Me.SuspendLayout()
         '
         'oflImagen
@@ -67,27 +67,27 @@ Partial Class FrmRegistrarRol
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(241, Byte), Integer))
-        Me.Panel3.Controls.Add(Me.Button1)
+        Me.Panel3.Controls.Add(Me.btnVolver)
         Me.Panel3.Controls.Add(Me.Label1)
         Me.Panel3.Location = New System.Drawing.Point(232, 1)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(969, 130)
         Me.Panel3.TabIndex = 43
         '
-        'Button1
+        'btnVolver
         '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(11, 39)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(48, 47)
-        Me.Button1.TabIndex = 31
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnVolver.BackColor = System.Drawing.Color.Transparent
+        Me.btnVolver.FlatAppearance.BorderSize = 0
+        Me.btnVolver.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnVolver.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVolver.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnVolver.Image = CType(resources.GetObject("btnVolver.Image"), System.Drawing.Image)
+        Me.btnVolver.Location = New System.Drawing.Point(11, 39)
+        Me.btnVolver.Name = "btnVolver"
+        Me.btnVolver.Size = New System.Drawing.Size(48, 47)
+        Me.btnVolver.TabIndex = 31
+        Me.btnVolver.UseVisualStyleBackColor = False
         '
         'Label1
         '
@@ -337,43 +337,37 @@ Partial Class FrmRegistrarRol
         Me.btnPerfil.Text = "Mi perfil"
         Me.btnPerfil.UseVisualStyleBackColor = False
         '
-        'Panel1
+        'pnFormulario
         '
-        Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Controls.Add(Me.lblDescripcionV)
-        Me.Panel1.Controls.Add(Me.lblNombreV)
-        Me.Panel1.Controls.Add(Me.btnRegistrar)
-        Me.Panel1.Controls.Add(Me.lblPermisos)
-        Me.Panel1.Controls.Add(Me.LchkPermisos)
-        Me.Panel1.Controls.Add(Me.rctDescripcion)
-        Me.Panel1.Controls.Add(Me.Label12)
-        Me.Panel1.Controls.Add(Me.txtNombre)
-        Me.Panel1.Controls.Add(Me.Label4)
-        Me.Panel1.Location = New System.Drawing.Point(239, 137)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(955, 579)
-        Me.Panel1.TabIndex = 47
-        '
-        'lblDescripcionV
-        '
-        Me.lblDescripcionV.AutoSize = True
-        Me.lblDescripcionV.Location = New System.Drawing.Point(458, 143)
-        Me.lblDescripcionV.Name = "lblDescripcionV"
-        Me.lblDescripcionV.Size = New System.Drawing.Size(0, 13)
-        Me.lblDescripcionV.TabIndex = 49
+        Me.pnFormulario.BackColor = System.Drawing.Color.White
+        Me.pnFormulario.Controls.Add(Me.lblDescripcionV)
+        Me.pnFormulario.Controls.Add(Me.lblNombreV)
+        Me.pnFormulario.Controls.Add(Me.btnRegistrar)
+        Me.pnFormulario.Controls.Add(Me.lblPermisos)
+        Me.pnFormulario.Controls.Add(Me.LchkPermisos)
+        Me.pnFormulario.Controls.Add(Me.rctDescripcion)
+        Me.pnFormulario.Controls.Add(Me.Label12)
+        Me.pnFormulario.Controls.Add(Me.txtNombre)
+        Me.pnFormulario.Controls.Add(Me.Label4)
+        Me.pnFormulario.Location = New System.Drawing.Point(239, 137)
+        Me.pnFormulario.Name = "pnFormulario"
+        Me.pnFormulario.Size = New System.Drawing.Size(955, 579)
+        Me.pnFormulario.TabIndex = 47
         '
         'lblNombreV
         '
-        Me.lblNombreV.AutoSize = True
-        Me.lblNombreV.Location = New System.Drawing.Point(459, 56)
+        Me.lblNombreV.Image = CType(resources.GetObject("lblNombreV.Image"), System.Drawing.Image)
+        Me.lblNombreV.Location = New System.Drawing.Point(458, 56)
         Me.lblNombreV.Name = "lblNombreV"
-        Me.lblNombreV.Size = New System.Drawing.Size(0, 13)
+        Me.lblNombreV.Size = New System.Drawing.Size(33, 33)
         Me.lblNombreV.TabIndex = 48
+        Me.lblNombreV.Tag = "1"
+        Me.lblNombreV.Visible = False
         '
         'btnRegistrar
         '
         Me.btnRegistrar.BackColor = System.Drawing.Color.White
-        Me.btnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.btnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
         Me.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRegistrar.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRegistrar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
@@ -445,13 +439,23 @@ Partial Class FrmRegistrarRol
         Me.Label4.TabIndex = 27
         Me.Label4.Text = "Nombre:"
         '
+        'lblDescripcionV
+        '
+        Me.lblDescripcionV.Image = CType(resources.GetObject("lblDescripcionV.Image"), System.Drawing.Image)
+        Me.lblDescripcionV.Location = New System.Drawing.Point(458, 141)
+        Me.lblDescripcionV.Name = "lblDescripcionV"
+        Me.lblDescripcionV.Size = New System.Drawing.Size(33, 33)
+        Me.lblDescripcionV.TabIndex = 49
+        Me.lblDescripcionV.Tag = "2"
+        Me.lblDescripcionV.Visible = False
+        '
         'FrmRegistrarRol
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1202, 720)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.pnFormulario)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel3)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -463,14 +467,14 @@ Partial Class FrmRegistrarRol
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.pnFormulario.ResumeLayout(False)
+        Me.pnFormulario.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents oflImagen As System.Windows.Forms.OpenFileDialog
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnVolver As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
     Friend WithEvents Button10 As System.Windows.Forms.Button
@@ -488,7 +492,7 @@ Partial Class FrmRegistrarRol
     Friend WithEvents btnInicio As System.Windows.Forms.Button
     Friend WithEvents btnAyuda As System.Windows.Forms.Button
     Friend WithEvents btnPerfil As System.Windows.Forms.Button
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents pnFormulario As System.Windows.Forms.Panel
     Friend WithEvents txtNombre As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents rctDescripcion As System.Windows.Forms.RichTextBox
