@@ -216,9 +216,9 @@ Partial Class FrmMostrarTiposDeBeca
         Me.Panel8.Controls.Add(Me.PictureBox3)
         Me.Panel8.Controls.Add(Me.Panel9)
         Me.Panel8.Controls.Add(Me.Label2)
-        Me.Panel8.Location = New System.Drawing.Point(0, -2)
+        Me.Panel8.Location = New System.Drawing.Point(0, 0)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(231, 131)
+        Me.Panel8.Size = New System.Drawing.Size(231, 129)
         Me.Panel8.TabIndex = 30
         '
         'PictureBox3

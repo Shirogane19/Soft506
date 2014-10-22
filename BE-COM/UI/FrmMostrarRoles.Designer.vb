@@ -50,9 +50,9 @@ Partial Class FrmMostrarRoles
         Me.cmbFiltroBusqueda = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.btnEditar = New System.Windows.Forms.Button()
+        Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.btnRegistrar = New System.Windows.Forms.Button()
         CType(Me.gridMostrarAlumnos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -368,7 +368,7 @@ Partial Class FrmMostrarRoles
         'txtBuscar
         '
         Me.txtBuscar.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtBuscar.Location = New System.Drawing.Point(307, 142)
+        Me.txtBuscar.Location = New System.Drawing.Point(312, 149)
         Me.txtBuscar.Name = "txtBuscar"
         Me.txtBuscar.Size = New System.Drawing.Size(201, 33)
         Me.txtBuscar.TabIndex = 35
@@ -379,7 +379,7 @@ Partial Class FrmMostrarRoles
         Me.cmbFiltroBusqueda.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbFiltroBusqueda.FormattingEnabled = True
         Me.cmbFiltroBusqueda.Items.AddRange(New Object() {"Nombre"})
-        Me.cmbFiltroBusqueda.Location = New System.Drawing.Point(632, 142)
+        Me.cmbFiltroBusqueda.Location = New System.Drawing.Point(643, 149)
         Me.cmbFiltroBusqueda.Name = "cmbFiltroBusqueda"
         Me.cmbFiltroBusqueda.Size = New System.Drawing.Size(201, 33)
         Me.cmbFiltroBusqueda.TabIndex = 36
@@ -388,7 +388,7 @@ Partial Class FrmMostrarRoles
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(238, 146)
+        Me.Label2.Location = New System.Drawing.Point(243, 153)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(67, 25)
         Me.Label2.TabIndex = 38
@@ -398,47 +398,47 @@ Partial Class FrmMostrarRoles
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(526, 146)
+        Me.Label4.Location = New System.Drawing.Point(537, 153)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(100, 25)
         Me.Label4.TabIndex = 40
         Me.Label4.Text = "Buscar por:"
         '
-        'Button3
+        'btnEditar
         '
-        Me.Button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
-        Me.Button3.Location = New System.Drawing.Point(1135, 293)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(55, 53)
-        Me.Button3.TabIndex = 41
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnEditar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEditar.Image = CType(resources.GetObject("btnEditar.Image"), System.Drawing.Image)
+        Me.btnEditar.Location = New System.Drawing.Point(1135, 293)
+        Me.btnEditar.Name = "btnEditar"
+        Me.btnEditar.Size = New System.Drawing.Size(55, 53)
+        Me.btnEditar.TabIndex = 41
+        Me.btnEditar.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnEliminar
         '
-        Me.Button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        Me.Button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Image = CType(resources.GetObject("Button4.Image"), System.Drawing.Image)
-        Me.Button4.Location = New System.Drawing.Point(1135, 366)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(55, 53)
-        Me.Button4.TabIndex = 42
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEliminar.Image = CType(resources.GetObject("btnEliminar.Image"), System.Drawing.Image)
+        Me.btnEliminar.Location = New System.Drawing.Point(1135, 366)
+        Me.btnEliminar.Name = "btnEliminar"
+        Me.btnEliminar.Size = New System.Drawing.Size(55, 53)
+        Me.btnEliminar.TabIndex = 42
+        Me.btnEliminar.UseVisualStyleBackColor = True
         '
-        'Button5
+        'btnRegistrar
         '
-        Me.Button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        Me.Button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Image = CType(resources.GetObject("Button5.Image"), System.Drawing.Image)
-        Me.Button5.Location = New System.Drawing.Point(1135, 220)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(55, 53)
-        Me.Button5.TabIndex = 43
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btnRegistrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.btnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRegistrar.Image = CType(resources.GetObject("btnRegistrar.Image"), System.Drawing.Image)
+        Me.btnRegistrar.Location = New System.Drawing.Point(1135, 220)
+        Me.btnRegistrar.Name = "btnRegistrar"
+        Me.btnRegistrar.Size = New System.Drawing.Size(55, 53)
+        Me.btnRegistrar.TabIndex = 43
+        Me.btnRegistrar.UseVisualStyleBackColor = True
         '
         'FrmMostrarRoles
         '
@@ -446,9 +446,9 @@ Partial Class FrmMostrarRoles
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1202, 720)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.btnRegistrar)
+        Me.Controls.Add(Me.btnEliminar)
+        Me.Controls.Add(Me.btnEditar)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.cmbFiltroBusqueda)
@@ -488,9 +488,9 @@ Partial Class FrmMostrarRoles
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents btnVolver As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents btnEditar As System.Windows.Forms.Button
+    Friend WithEvents btnEliminar As System.Windows.Forms.Button
+    Friend WithEvents btnRegistrar As System.Windows.Forms.Button
     Friend WithEvents Button10 As System.Windows.Forms.Button
     Friend WithEvents Button8 As System.Windows.Forms.Button
     Friend WithEvents Button7 As System.Windows.Forms.Button

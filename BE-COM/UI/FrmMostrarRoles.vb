@@ -26,4 +26,10 @@ Public Class FrmMostrarRoles
         formAnterior.Show()
         Me.Hide()
     End Sub
+
+    Private Sub btnRegistrar_Click(sender As Object, e As EventArgs) Handles btnRegistrar.Click
+        Dim frmRegistrarRol As FrmRegistrarRol = New FrmRegistrarRol(Me)
+        frmRegistrarRol.Show()
+        Me.Hide()
+    End Sub
 End Class
