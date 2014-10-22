@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UI
+namespace EntitiesLayer
 {
     public class Class1
     {

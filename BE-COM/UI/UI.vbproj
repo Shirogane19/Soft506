@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{82675C24-D9A3-42F5-8A19-072C444CD390}</ProjectGuid>
+    <ProjectGuid>{182DE879-07E2-4021-ADD7-38E2CF2FB219}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>DisenioPreliminar.My.MyApplication</StartupObject>
-    <RootNamespace>DisenioPreliminar</RootNamespace>
-    <AssemblyName>DisenioPreliminar</AssemblyName>
+    <StartupObject>UI1.My.MyApplication</StartupObject>
+    <RootNamespace>UI1</RootNamespace>
+    <AssemblyName>UI1</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -20,7 +20,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>DisenioPreliminar.xml</DocumentationFile>
+    <DocumentationFile>UI1.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -30,7 +30,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>DisenioPreliminar.xml</DocumentationFile>
+    <DocumentationFile>UI1.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -70,16 +70,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmRegistrarRol.Designer.vb">
-      <DependentUpon>FrmRegistrarRol.vb</DependentUpon>
+    <Compile Include="FrmIniciarSesion.Designer.vb">
+      <DependentUpon>FrmIniciarSesion.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmRegistrarRol.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMostrarRoles.Designer.vb">
-      <DependentUpon>FrmMostrarRoles.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMostrarRoles.vb">
+    <Compile Include="FrmIniciarSesion.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMantenimientoUsuarios.Designer.vb">
@@ -88,23 +82,28 @@
     <Compile Include="FrmMantenimientoUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPantallaPrincipal.vb">
+    <Compile Include="FrmMostrarRoles.Designer.vb">
+      <DependentUpon>FrmMostrarRoles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMostrarRoles.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmPantallaPrincipal.Designer.vb">
       <DependentUpon>FrmPantallaPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPantallaPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarRol.Designer.vb">
+      <DependentUpon>FrmRegistrarRol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrarRol.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmRegistrarUsuario.Designer.vb">
       <DependentUpon>FrmRegistrarUsuario.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmRegistrarUsuario.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmIniciarSesion.Designer.vb">
-      <DependentUpon>FrmIniciarSesion.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmIniciarSesion.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GlobalModule.vb" />
@@ -149,23 +148,23 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FrmRegistrarRol.resx">
-      <DependentUpon>FrmRegistrarRol.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMostrarRoles.resx">
-      <DependentUpon>FrmMostrarRoles.vb</DependentUpon>
+    <EmbeddedResource Include="FrmIniciarSesion.resx">
+      <DependentUpon>FrmIniciarSesion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMantenimientoUsuarios.resx">
       <DependentUpon>FrmMantenimientoUsuarios.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmMostrarRoles.resx">
+      <DependentUpon>FrmMostrarRoles.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPantallaPrincipal.resx">
       <DependentUpon>FrmPantallaPrincipal.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarRol.resx">
+      <DependentUpon>FrmRegistrarRol.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistrarUsuario.resx">
       <DependentUpon>FrmRegistrarUsuario.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmIniciarSesion.resx">
-      <DependentUpon>FrmIniciarSesion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -197,16 +196,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Visual Studio 2013\Projects\UsuariosProyecto\BLL\BLL.csproj">
-      <Project>{d7cfe424-d6a4-4ef3-9753-1ad7ecfc554e}</Project>
-      <Name>BLL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\Visual Studio 2013\Projects\UsuariosProyecto\EntitiesLayer\EntitiesLayer.csproj">
-      <Project>{4a7a979d-db76-460d-b7c4-4a39d09149ba}</Project>
-      <Name>EntitiesLayer</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

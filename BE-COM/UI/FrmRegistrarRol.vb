@@ -3,9 +3,9 @@
 Public Class FrmRegistrarRol
 
     Private Sub FrmRegistrarRol_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        For Each permiso As permiso In gestorPermiso.obtenerPermisos()
-            LchkPermisos.Items.Add(permiso.Nombre())
-        Next
+        ' For Each permiso As permiso In gestorPermiso.obtenerPermisos()
+        'LchkPermisos.Items.Add(permiso.Nombre())
+        'Next
     End Sub
 
     Private Sub FrmRegistrarRol_Paint(sender As Object, e As System.Windows.Forms.PaintEventArgs) Handles Me.Paint
