@@ -8,3 +8,8 @@ C:\Users\Douglas\Documents\Soft506\BE-COM\EntitiesLayer\bin\Debug\EntitiesLayer.
 C:\Users\Douglas\Documents\Soft506\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
 C:\Users\Douglas\Documents\Soft506\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.dll
 C:\Users\Douglas\Documents\Soft506\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
+C:\Users\Mauricio Araica\Documents\Soft506\BE-COM\EntitiesLayer\bin\Debug\EntitiesLayer.dll
+C:\Users\Mauricio Araica\Documents\Soft506\BE-COM\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
+C:\Users\Mauricio Araica\Documents\Soft506\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
+C:\Users\Mauricio Araica\Documents\Soft506\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.dll
+C:\Users\Mauricio Araica\Documents\Soft506\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
