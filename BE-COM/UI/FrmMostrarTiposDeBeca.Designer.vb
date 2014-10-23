@@ -82,7 +82,7 @@ Partial Class FrmMostrarTiposDeBeca
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(516, 59)
         Me.Label1.TabIndex = 32
-        Me.Label1.Text = "Mostrar tipos de beca"
+        Me.Label1.Text = "Mostrar tipos de becas"
         '
         'Panel3
         '
