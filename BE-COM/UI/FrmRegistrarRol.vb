@@ -3,7 +3,7 @@ Imports BLL
 Public Class FrmRegistrarRol
     Dim formAnterior As Form
     Dim listaDatos As List(Of Boolean)
-    Dim objGestor As New Gestor()
+    Dim objGestor As New GestorUsuarios()
     Dim objValidaciones As New Validaciones()
 
     Public Sub New(pformAnterior As Form)
@@ -15,7 +15,7 @@ Public Class FrmRegistrarRol
 
     End Sub
     Private Sub FrmRegistrarRol_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim objGestor As New Gestor()
+        Dim objGestor As New GestorUsuarios()
         For Each permiso As Permiso In objGestor.obtenerPermisos()
             LchkPermisos.Items.Add(permiso.Nombre())
         Next
@@ -40,7 +40,17 @@ Public Class FrmRegistrarRol
     End Sub
 
     Private Sub btnRegistrar_Click(sender As Object, e As EventArgs) Handles btnRegistrar.Click
+        Dim permisosSeleccionados As List(Of Integer)
+        Dim nombre As String = txtNombre.Text
+        Dim descripcion As String = rctDescripcion.Text
 
+        validarCampoFormulario()
+        permisosSeleccionados = obtenerPermisosSeleccionados()        
+        gestorUsuario.agregarRol(nombre, descripcion, permisosSeleccionados)
+        gestorUsuario.guardarCambios()
+    End Sub
+
+    Private Sub validarCampoFormulario()
         For Each validacion As Label In Me.pnFormulario.Controls.OfType(Of Label)()
             If IsNumeric(validacion.Tag) = True Then
                 If validacion.Image.Equals(campoIncorrecto) Then
@@ -48,18 +58,17 @@ Public Class FrmRegistrarRol
                 End If
             End If
         Next
+    End Sub
 
-
+    Private Function obtenerPermisosSeleccionados() As List(Of Integer)
         Dim permisosSeleccionados As List(Of Integer) = New List(Of Integer)
 
         For Each permisoSeleccionado As Integer In LchkPermisos.CheckedIndices
             permisosSeleccionados.Add(permisoSeleccionado)
         Next
 
-    End Sub
-
-    Private Sub validarCampoFormulario()
-    End Sub
+        Return permisosSeleccionados
+    End Function
 
     Private Sub txtNombre_Leave(sender As Object, e As EventArgs) Handles txtNombre.Leave
 

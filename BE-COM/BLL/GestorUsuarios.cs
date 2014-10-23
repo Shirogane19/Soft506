@@ -7,7 +7,7 @@ using DAL;
 using EntitiesLayer;
 namespace BLL
 {
-    public class Gestor
+    public class GestorUsuarios
     {
         private UnitOfWork UoW = new UnitOfWork();
 
@@ -16,9 +16,10 @@ namespace BLL
 
         }
 
-        public void agregarRol(String pnombre, String pdescripcion, List<String> ppermisos)
+        public void agregarRol(String pnombre, String pdescripcion, List<int> ppermisosSeleccionados)
         {
-
+            Rol rol = new Rol (pnombre,pdescripcion);
+            UoW.RolRepository.Insert(rol);
         }
 
         public void modificarUsuario()
@@ -45,5 +46,11 @@ namespace BLL
         {
             return UoW.PermisoRepository.GetAll();
         }
+
+        public void guardarCambios()
+        {
+            UoW.RolRepository.Save();
+        }
+
     }
 }

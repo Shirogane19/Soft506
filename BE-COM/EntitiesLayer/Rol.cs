@@ -28,12 +28,11 @@ namespace EntitiesLayer
             permisos = new List<Permiso>();
         }
 
-        public Rol(string pnombre, string pdescripcion, List<Permiso> ppermisos)
+        public Rol(string pnombre, string pdescripcion)
         {
             Id = 0;
             Nombre = pnombre;
             Descripcion = pdescripcion;
-            permisos = ppermisos;
         }
     }
 }
