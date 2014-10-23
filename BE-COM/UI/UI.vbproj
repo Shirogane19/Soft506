@@ -90,6 +90,12 @@
     <Compile Include="FrmMantenimientoUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmMostrarHistorialAcademico.Designer.vb">
+      <DependentUpon>FrmMostrarHistorialAcademico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMostrarHistorialAcademico.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmMostrarRoles.Designer.vb">
       <DependentUpon>FrmMostrarRoles.vb</DependentUpon>
     </Compile>
@@ -168,6 +174,9 @@
     <EmbeddedResource Include="FrmMantenimientoUsuarios.resx">
       <DependentUpon>FrmMantenimientoUsuarios.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmMostrarHistorialAcademico.resx">
+      <DependentUpon>FrmMostrarHistorialAcademico.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMostrarRoles.resx">
       <DependentUpon>FrmMostrarRoles.vb</DependentUpon>
     </EmbeddedResource>
@@ -234,6 +243,9 @@
       <Project>{aaf9ed03-2d38-4a7e-8616-b656c7b4663e}</Project>
       <Name>EntitiesLayer</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Imagenes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

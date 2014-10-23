@@ -1,8 +1,10 @@
 ﻿Imports EntitiesLayer
-
+Imports BLL
 Public Class FrmRegistrarRol
     Dim formAnterior As Form
     Dim listaDatos As List(Of Boolean)
+    Dim objGestor As New Gestor()
+    Dim objValidaciones As New Validaciones()
 
     Public Sub New(pformAnterior As Form)
         formAnterior = pformAnterior
@@ -13,7 +15,8 @@ Public Class FrmRegistrarRol
 
     End Sub
     Private Sub FrmRegistrarRol_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        For Each permiso As Permiso In gestorPermiso.obtenerPermisos()
+        Dim objGestor As New Gestor()
+        For Each permiso As Permiso In objGestor.obtenerPermisos()
             LchkPermisos.Items.Add(permiso.Nombre())
         Next
 
@@ -59,7 +62,8 @@ Public Class FrmRegistrarRol
     End Sub
 
     Private Sub txtNombre_Leave(sender As Object, e As EventArgs) Handles txtNombre.Leave
-        If validaciones.validarCamposTexto(txtNombre) = True Then
+
+        If objValidaciones.validarCamposTexto(txtNombre) = True Then
             lblNombreV.Image = campoCorrecto
             lblNombreV.Visible = True
         Else
@@ -69,7 +73,7 @@ Public Class FrmRegistrarRol
     End Sub
 
     Private Sub rctDescripcion_Leave(sender As Object, e As EventArgs) Handles rctDescripcion.Leave
-        If validaciones.validarCamposTexto(rctDescripcion) = True Then
+        If objValidaciones.validarCamposTexto(rctDescripcion) = True Then
             lblDescripcionV.Image = campoCorrecto
             lblDescripcionV.Visible = True
         Else
