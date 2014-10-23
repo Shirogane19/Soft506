@@ -1,0 +1,1 @@
+ALTER TABLE TbRol ALTER COLUMN Descripcion varchar(200);
