@@ -53,3 +53,4 @@ C:\Users\Douglas\Documents\Soft506\BE-COM\UI\obj\Debug\UI1.exe
 C:\Users\Douglas\Documents\Soft506\BE-COM\UI\obj\Debug\UI1.xml
 C:\Users\Douglas\Documents\Soft506\BE-COM\UI\obj\Debug\UI1.pdb
 C:\Users\Douglas\Documents\Soft506\BE-COM\UI\obj\Debug\UI1.FrmMostrarHistorialAcademico.resources
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\obj\Debug\UI1.FrmMostrarHistorialAcademico.resources
