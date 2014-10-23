@@ -356,18 +356,16 @@ Partial Class FrmRegistrarRol
         '
         'lblDescripcionV
         '
-        Me.lblDescripcionV.AutoSize = True
         Me.lblDescripcionV.Location = New System.Drawing.Point(458, 143)
         Me.lblDescripcionV.Name = "lblDescripcionV"
-        Me.lblDescripcionV.Size = New System.Drawing.Size(0, 13)
+        Me.lblDescripcionV.Size = New System.Drawing.Size(33, 31)
         Me.lblDescripcionV.TabIndex = 49
         '
         'lblNombreV
         '
-        Me.lblNombreV.AutoSize = True
         Me.lblNombreV.Location = New System.Drawing.Point(459, 56)
         Me.lblNombreV.Name = "lblNombreV"
-        Me.lblNombreV.Size = New System.Drawing.Size(0, 13)
+        Me.lblNombreV.Size = New System.Drawing.Size(32, 33)
         Me.lblNombreV.TabIndex = 48
         '
         'btnRegistrar
@@ -391,7 +389,7 @@ Partial Class FrmRegistrarRol
         Me.lblPermisos.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPermisos.Location = New System.Drawing.Point(515, 28)
         Me.lblPermisos.Name = "lblPermisos"
-        Me.lblPermisos.Size = New System.Drawing.Size(83, 25)
+        Me.lblPermisos.Size = New System.Drawing.Size(82, 25)
         Me.lblPermisos.TabIndex = 43
         Me.lblPermisos.Text = "Permisos"
         '
