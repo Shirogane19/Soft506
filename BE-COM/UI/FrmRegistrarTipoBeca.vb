@@ -1,4 +1,5 @@
-﻿Public Class FrmMostrarTiposDeBeca
+﻿Public Class FrmRegistrarTipoBeca
+
     Dim formAnterior As Form
 
     Public Sub New(pformAnterior As Form)
@@ -12,14 +13,5 @@
     Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
         formAnterior.Show()
         Me.Hide()
-    End Sub
-    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
-
-    End Sub
-
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim frmRegistrarTiposBeca As Form = New FrmRegistrarTipoBeca(Me)
-        frmRegistrarTiposBeca.Show()
     End Sub
 End Class
